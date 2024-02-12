@@ -1,0 +1,63 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 7fr 1.5fr 1fr 1fr;
+    grid-template-rows:  1.5fr 1.2fr 1.2fr 1.5fr 1.fr;
+    grid-template-areas: 
+    "nav li li li "
+    "main main main sidebar"
+    "Postmeta Maincontent Maincontent Ads"
+    "Postmeta MaincontentImage MaincontentImage OthersStuffs"
+    "footer footer footer footer";
+    grid-gap: 0.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+  text-transform: uppercase;
+
+    
+    
+}
+nav {
+    background-color: yellow;  
+    grid-area: nav; 
+}
+li{
+    background-color: pink;
+    grid-area: li; 
+}
+ 
+main{
+    background-color: skyblue;
+    grid-area: main ;
+}
+#sidebar{
+    background-color: orange;
+    grid-area: sidebar ;
+}
+#Postmeta{
+    background-color: yellowgreen;
+    grid-area: Postmeta ;
+}
+#Maincontent{
+    background-color: gray;
+    grid-area: Maincontent ;
+}
+#Ads{
+    background-color: green;
+    grid-area: Ads;
+}
+#MaincontentImage{
+    background-color:rgb(218, 218, 7);
+    grid-area: MaincontentImage ;
+}
+#OthersStuffs{
+    background-color: rgb(201, 15, 201);
+    grid-area:OthersStuffs ;
+}
+footer{
+    background-color: rgb(255, 211, 155);
+    grid-area: footer;
+}
